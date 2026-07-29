@@ -52,3 +52,21 @@ menuToggle.addEventListener("click",()=>{
     nav.classList.toggle("active");
 
 });
+
+window.addEventListener("load", () => {
+
+    document.querySelectorAll("*").forEach(el => {
+
+        const r = el.getBoundingClientRect();
+
+        if (r.right > window.innerWidth + 1) {
+
+            console.log(el);
+
+            el.style.outline = "3px solid red";
+
+        }
+
+    });
+
+});
