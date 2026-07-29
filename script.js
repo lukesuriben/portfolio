@@ -42,3 +42,30 @@ behavior:"smooth"
 });
 
 };
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    menuToggle.textContent =
+        navLinks.classList.contains("active") ? "✕" : "☰";
+
+});
+
+// Auto close kapag pinindot ang menu
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+        menuToggle.textContent="☰";
+
+    });
+
+});
