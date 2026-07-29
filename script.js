@@ -49,17 +49,22 @@ const nav = document.querySelector("nav");
 
 menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
+
+    // Palitan ang icon
+    if (nav.classList.contains("active")) {
+        menuToggle.innerHTML = "&times;";
+    } else {
+        menuToggle.innerHTML = "☰";
+    }
 });
 
-// Auto close kapag pinindot ang menu
+// Auto close kapag pinili ang menu
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
+    link.addEventListener("click", () => {
 
-    link.addEventListener("click",()=>{
-
-        navLinks.classList.remove("active");
-
-        menuToggle.textContent="☰";
+        nav.classList.remove("active");
+        menuToggle.innerHTML = "☰";
 
     });
 
