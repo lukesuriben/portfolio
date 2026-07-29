@@ -27,7 +27,7 @@
 
 <body>
 
-<div id="progress-bar"></div>
+<div id="progress-bar" class="scroll-progress"></div>''
 
 <header class="navbar">
 
@@ -37,8 +37,10 @@
             Hi! I'm Luke
         </a>
 
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
         <nav id="main-nav">
@@ -155,7 +157,6 @@
     </div>
 
 </section>
-
 
 <section id="help" class="help">
 
@@ -478,232 +479,448 @@
 
 </section>
 
+<!-- =======================================================
+TOOLS & TECHNOLOGIES
+======================================================= -->
+
 <section class="tools" id="tools">
 
     <div class="container">
 
-        <span class="section-badge">TOOLS</span>
+        <div class="section-header">
 
-        <h2>Technology That Supports Better Business Operations</h2>
+            <span class="section-tag">
+                TOOLS & TECHNOLOGIES
+            </span>
 
-        <p class="section-description">
-            I use trusted productivity, automation, and business tools to
-            streamline workflows, improve collaboration, and support efficient
-            day-to-day operations.
-        </p>
+            <h2>Tools I Use to Get Things Done</h2>
+
+            <p class="section-description">
+
+                A combination of powerful tools that help me stay
+                efficient, organized, and productive while supporting
+                business operations and workflow automation.
+
+            </p>
+
+        </div>
 
         <div class="tools-grid">
 
-            <div class="tool-card">
+            <!-- Productivity -->
 
-                <h3>Productivity</h3>
+            <article class="tool-card">
 
-                <span class="tool-level">Daily Use</span>
+                <div class="tool-header">
 
-                <div class="logo-grid">
+                    <div class="tool-category-icon">
 
-                    <div class="logo-item">
+                        <i class="fa-solid fa-bullseye"></i>
 
-                        <img src="images/logos/Microsoft365.svg" alt="Microsoft365">
+                    </div>
+
+                    <h3>Productivity</h3>
+
+                    <span class="tool-level">
+                        Daily Use
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/Microsoft365.svg"
+                             alt="Microsoft 365"
+                             loading="lazy">
 
                         <span>Microsoft 365</span>
-                    </div>
-
-                    <div class="logo-item">
-
-                        <img src="images/logos/Excel.svg" alt="Excel">
-
-                        <span>Excel</span>                        
 
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/Google.svg" alt="Google">
+                        <img src="images/logos/Excel.svg"
+                             alt="Excel"
+                             loading="lazy">
 
-                        <span>Google Workspace</span>                        
+                        <span>Excel</span>
 
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/GSheets.svg" alt="GSheets">
+                        <img src="images/logos/Google.svg"
+                             alt="Google Workspace"
+                             loading="lazy">
 
-                        <span>Google Sheets</span>                        
+                        <span>Google Workspace</span>
+
+                    </div>
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/GSheets.svg"
+                             alt="Google Sheets"
+                             loading="lazy">
+
+                        <span>Google Sheets</span>
 
                     </div>
 
                 </div>
 
-            </div>
+            </article>
 
-            <div class="tool-card">
+            
 
-                <h3>Automation & AI</h3>
 
-                <span class="tool-level">Advanced</span>
 
-                <div class="logo-grid">
+            <!-- Automation -->
 
-                    <div class="logo-item">
+            <article class="tool-card">
 
-                        <img src="images/logos/n8n.svg" alt="n8n">
+                <div class="tool-header">
+
+                    <div class="tool-category-icon">
+
+                        <i class="fa-solid fa-share-nodes"></i>
+
+                    </div>
+
+                    <h3>Automation & AI</h3>
+
+                    <span class="tool-level">
+
+                        Advanced
+
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/n8n.svg"
+                             alt="n8n"
+                             loading="lazy">
 
                         <span>n8n</span>
-                    </div>
-                    
-                    <div class="logo-item">
 
-                        <img src="images/logos/chatgpt.svg" alt="chatgpt">
+                    </div>
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/chatgpt.svg"
+                             alt="ChatGPT"
+                             loading="lazy">
 
                         <span>ChatGPT</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/claude.svg" alt="claude">
+                        <img src="images/logos/claude.svg"
+                             alt="Claude"
+                             loading="lazy">
 
                         <span>Claude</span>
+
                     </div>
-               
+
                 </div>
 
-            </div>
+            </article>
 
-            <div class="tool-card">
-                <h3>Design</h3>
 
-                <span class="tool-level">Advanced</span>
 
-                <div class="logo-grid">
+            <!-- Design -->
 
-                    <div class="logo-item">
+            <article class="tool-card">
 
-                        <img src="images/logos/photoshop.svg" alt="photoshop">
+                <div class="tool-header">
+
+                    <div class="tool-category-icon">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                    </div>
+
+                    <h3>Design</h3>
+
+                    <span class="tool-level">
+
+                        Advanced
+
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/photoshop.svg"
+                             alt="Adobe Photoshop"
+                             loading="lazy">
 
                         <span>Adobe Photoshop</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/Canva.svg" alt="canva">
+                        <img src="images/logos/Canva.svg"
+                             alt="Canva"
+                             loading="lazy">
 
                         <span>Canva</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/filmora.svg" alt="filmora">
+                        <img src="images/logos/filmora.svg"
+                             alt="Filmora"
+                             loading="lazy">
 
                         <span>Filmora</span>
+
                     </div>
 
                 </div>
 
-            </div>
+            </article>
 
-            <div class="tool-card">
-                
-                <h3>Business Systems</h3>
-                
-                <span class="tool-level">Advanced</span>
+                        <!-- Business Systems -->
 
-                <div class="logo-grid">
+            <article class="tool-card">
 
-                    <div class="logo-item">
+                <div class="tool-header">
 
-                        <img src="images/logos/windows.svg" alt="windows">
+                    <div class="tool-category-icon">
+
+                        <i class="fa-solid fa-server"></i>
+
+                    </div>
+
+                    <h3>Business Systems</h3>
+
+                    <span class="tool-level">
+                        Advanced
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/windows.svg"
+                             alt="Windows Server"
+                             loading="lazy">
 
                         <span>Windows Server</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/quickbooks.svg" alt="Quickbooks">
+                        <img src="images/logos/quickbooks.svg"
+                             alt="QuickBooks"
+                             loading="lazy">
 
-                        <span>Quickbooks</span>
+                        <span>QuickBooks</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/Foxpro.png" alt="Foxpro">
+                        <img src="images/logos/Foxpro.png"
+                             alt="Visual FoxPro"
+                             loading="lazy">
 
-                        <span>Visual Foxpro</span>
+                        <span>Visual FoxPro</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/visualbasic.png" alt="visualbasic">
+                        <img src="images/logos/visualbasic.png"
+                             alt="Visual Basic"
+                             loading="lazy">
 
                         <span>Visual Basic</span>
+
                     </div>
 
                 </div>
-                
-            </div>
 
-            <div class="tool-card">
-                <h3>E-commerce</h3>
-                
-                <span class="tool-level">Experienced</span>
+            </article>
 
-                <div class="logo-grid">
 
-                    <div class="logo-item">
 
-                        <img src="images/logos/selleramp.png" alt="SellerAmp">
+            <!-- E-commerce -->
+
+            <article class="tool-card">
+
+                <div class="tool-header">
+
+                    <div class="tool-category-icon">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                    <h3>E-commerce</h3>
+
+                    <span class="tool-level">
+                        Experienced
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/selleramp.png"
+                             alt="SellerAmp"
+                             loading="lazy">
 
                         <span>SellerAmp</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/keepa.png" alt="Keepa">
+                        <img src="images/logos/keepa.png"
+                             alt="Keepa"
+                             loading="lazy">
 
                         <span>Keepa</span>
+
                     </div>
 
                 </div>
-                
-            </div>
 
-            <div class="tool-card">
-                <h3>Communication</h3>
+            </article>
 
-                <span class="tool-level">Daily Use</span>
 
-                <div class="logo-grid">
 
-                    <div class="logo-item">
+            <!-- Communication -->
 
-                        <img src="images/logos/Zoom.svg" alt="Zoom">
+            <article class="tool-card">
+
+                <div class="tool-header">
+
+                    <div class="tool-category-icon">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                    </div>
+
+                    <h3>Communication</h3>
+
+                    <span class="tool-level">
+                        Daily Use
+                    </span>
+
+                    <div class="tool-line"></div>
+
+                </div>
+
+                <div class="tool-list">
+
+                    <div class="tool-item">
+
+                        <img src="images/logos/Zoom.svg"
+                             alt="Zoom"
+                             loading="lazy">
 
                         <span>Zoom</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/Teams.svg" alt="Teams">
+                        <img src="images/logos/Teams.svg"
+                             alt="Microsoft Teams"
+                             loading="lazy">
 
-                        <span>Teams</span>
+                        <span>Microsoft Teams</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/outlook.svg" alt="outlook">
+                        <img src="images/logos/outlook.svg"
+                             alt="Outlook"
+                             loading="lazy">
 
                         <span>Outlook</span>
+
                     </div>
 
-                    <div class="logo-item">
+                    <div class="tool-item">
 
-                        <img src="images/logos/Zello.png" alt="Zello">
+                        <img src="images/logos/Zello.png"
+                             alt="Zello"
+                             loading="lazy">
 
                         <span>Zello</span>
+
                     </div>
 
                 </div>
->
+
+            </article>
+
+        </div>
+
+
+
+        <!-- Learning Banner -->
+
+        <div class="learning-banner">
+
+            <div class="learning-icon">
+
+                <i class="fa-solid fa-award"></i>
+
+            </div>
+
+            <div class="learning-content">
+
+                <h3>
+
+                    Always Learning, Always Improving
+
+                </h3>
+
+                <p>
+
+                    I continuously explore new technologies,
+                    AI tools, automation platforms, and business
+                    systems to deliver better solutions,
+                    streamline operations, and create greater
+                    value for every business I support.
+
+                </p>
+
             </div>
 
         </div>
@@ -733,18 +950,20 @@
 
             <div class="contact-info">
              
-                <div class="info-card">
-                    
+                <a
+                    href="mailto:va.lukesuriben@gmail.com?subject=Project%20Inquiry&body=Hi%20Luke,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AThank%20you!"
+                    class="info-card email-card">
+
                     <div class="info-icon">
                         <img src="images/icons/mail.svg" alt="Email">
                     </div>
-                    
+
                     <div class="info-content">
                         <h4>Email</h4>
                         <p>va.lukesuriben@gmail.com</p>
                     </div>
-                
-                </div>
+
+                </a>
 
                 <div class="info-card">
 
@@ -788,6 +1007,7 @@
             </div>
 
             <form
+                id="contactForm"
                 class="contact-form"
                 action="https://api.web3forms.com/submit"
                 method="POST">
@@ -812,11 +1032,13 @@
 
                 <input
                     type="email"
+                    id="email"
                     name="email"
                     placeholder="Email Address"
                     required>
 
                 <textarea
+                    id="message"
                     name="message"
                     placeholder="Tell me about your project..."
                     rows="6"
@@ -855,19 +1077,6 @@ offset:80
 <i class="fa-solid fa-arrow-up"></i>
 
 </button>
-
-<script>
-    const form = document.querySelector(".contact-form");
-
-    form.addEventListener("submit", function () {
-
-    const clientName = document.getElementById("id").value;
-
-    document.getElementById("subject").value =
-        "New Project Inquiry " + clientName;
-
-    });
-</script>
 
 <script src="script.js"></script>
 

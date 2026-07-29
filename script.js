@@ -1,149 +1,268 @@
-const progress = document.getElementById("progress-bar");
+// ======================================================
+// LUKE SURIBEN PORTFOLIO
+// Main Script
+// ======================================================
 
-window.addEventListener("scroll", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const scroll =
-        document.documentElement.scrollTop;
-
-    const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-
-    progress.style.width =
-        (scroll / height) * 100 + "%";
-
-});
-
-const topBtn =
-document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>500){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
+    initNavigation();
+    initSmoothScroll();
+    initActiveNavigation();
+    initScrollProgress();
+    initBackToTop();
+    initRevealAnimation();
+    initContactForm();
 
 });
 
-topBtn.onclick=()=>{
+// ======================================================
+// MOBILE NAVIGATION
+// ======================================================
 
-window.scrollTo({
+function initNavigation() {
 
-top:0,
+    const menuBtn = document.getElementById("menu-toggle");
+    const nav = document.getElementById("main-nav");
 
-behavior:"smooth"
+    if (!menuBtn || !nav) return;
 
-});
+    menuBtn.addEventListener("click", () => {
 
-};
+        nav.classList.toggle("active");
+        menuBtn.classList.toggle("active");
 
+    });
 
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav");
+    document.querySelectorAll(".nav-links a").forEach(link => {
 
-menuToggle.addEventListener("click",()=>{
+        link.addEventListener("click", () => {
 
-    nav.classList.toggle("active");
+            nav.classList.remove("active");
+            menuBtn.classList.remove("active");
 
-});
+        });
 
-window.addEventListener("load", () => {
+    });
 
-    document.querySelectorAll("*").forEach(el => {
+    document.addEventListener("click", (e) => {
 
-        const r = el.getBoundingClientRect();
+        if (
+            !nav.contains(e.target) &&
+            !menuBtn.contains(e.target)
+        ) {
 
-        if (r.right > window.innerWidth + 1) {
-
-            console.log(el);
-
-            el.style.outline = "3px solid red";
+            nav.classList.remove("active");
+            menuBtn.classList.remove("active");
 
         }
 
     });
 
-});
+}
 
-/* =========================================================
-   RESPONSIVE / MOBILE SAFETY PATCH
-   ========================================================= */
+// ======================================================
+// SMOOTH SCROLL
+// ======================================================
 
-document.addEventListener('DOMContentLoaded', function () {
+function initSmoothScroll() {
 
-    /*
-     * MOBILE NAVIGATION
-     *
-     * This safely looks for the mobile menu button and navigation.
-     * It will not cause an error if one of the elements is missing.
-     */
-    const menuToggle =
-        document.querySelector('.menu-toggle') ||
-        document.querySelector('.nav-toggle') ||
-        document.querySelector('[data-menu-toggle]');
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-    const nav =
-        document.querySelector('.nav-menu') ||
-        document.querySelector('.nav-links') ||
-        document.querySelector('nav');
+        link.addEventListener("click", function (e) {
 
-    if (menuToggle && nav) {
+            const target = document.querySelector(this.getAttribute("href"));
 
-        menuToggle.addEventListener('click', function () {
+            if (!target) return;
 
-            nav.classList.toggle('active');
-            menuToggle.classList.toggle('active');
+            e.preventDefault();
 
-            const expanded = menuToggle.classList.contains('active');
+            target.scrollIntoView({
 
-            menuToggle.setAttribute(
-                'aria-expanded',
-                expanded ? 'true' : 'false'
-            );
-
-        });
-
-
-        /*
-         * CLOSE MOBILE MENU AFTER CLICKING A NAVIGATION LINK
-         */
-        nav.querySelectorAll('a').forEach(function (link) {
-
-            link.addEventListener('click', function () {
-
-                nav.classList.remove('active');
-                menuToggle.classList.remove('active');
-
-                menuToggle.setAttribute(
-                    'aria-expanded',
-                    'false'
-                );
+                behavior: "smooth",
+                block: "start"
 
             });
 
         });
 
-    }
+    });
 
+}
 
-    /*
-     * HORIZONTAL OVERFLOW PROTECTION
-     *
-     * This prevents the document from creating a horizontal
-     * scrollbar when an element accidentally extends beyond
-     * the viewport.
-     *
-     * The actual CSS fixes should still be used to prevent
-     * elements from overflowing in the first place.
-     */
-    document.documentElement.style.overflowX = 'hidden';
+// ======================================================
+// ACTIVE NAVIGATION
+// ======================================================
 
-    document.body.style.overflowX = 'hidden';
+function initActiveNavigation() {
 
-});
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    if (!sections.length) return;
+
+    window.addEventListener("scroll", () => {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const top = section.offsetTop - 120;
+
+            if (window.scrollY >= top) {
+
+                current = section.id;
+
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === "#" + current) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+}
+
+// ======================================================
+// SCROLL PROGRESS BAR
+// ======================================================
+
+function initScrollProgress() {
+
+    const bar = document.querySelector(".scroll-progress");
+
+    if (!bar) return;
+
+    window.addEventListener("scroll", () => {
+
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+
+        const percent = (window.scrollY / total) * 100;
+
+        bar.style.width = percent + "%";
+
+    });
+
+}
+
+// ======================================================
+// BACK TO TOP
+// ======================================================
+
+function initBackToTop() {
+
+    const btn = document.querySelector(".back-to-top");
+
+    if (!btn) return;
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 500) {
+
+            btn.classList.add("show");
+
+        } else {
+
+            btn.classList.remove("show");
+
+        }
+
+    });
+
+    btn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
+
+// ======================================================
+// REVEAL ANIMATION
+// ======================================================
+
+function initRevealAnimation() {
+
+    const items = document.querySelectorAll(
+        ".help-card,.timeline-item,.project-card,.tool-card,.info-card,.contact-form"
+    );
+
+    if (!items.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.15
+
+    });
+
+    items.forEach(item => {
+
+        item.classList.add("hidden");
+
+        observer.observe(item);
+
+    });
+
+}
+
+// ======================================================
+// CONTACT FORM
+// ======================================================
+
+function initContactForm() {
+
+    const form = document.getElementById("contactForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        if (
+            !name.value.trim() ||
+            !email.value.trim() ||
+            !message.value.trim()
+        ) {
+
+            e.preventDefault();
+
+            alert("Please complete all required fields.");
+
+            return;
+
+        }
+
+    });
+
+}
