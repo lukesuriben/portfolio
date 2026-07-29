@@ -162,16 +162,6 @@ header{
 
 }
 
-/* ==============================
-NAVIGATION
-============================== */
-
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
-}
 
 /* ==============================
 BUTTONS
@@ -1632,9 +1622,9 @@ min-height:180px;
 
 }
 
-/* =====================================
+/* ===========================
    MOBILE NAVIGATION
-===================================== */
+=========================== */
 
 .menu-toggle{
     display:none;
@@ -1648,41 +1638,31 @@ min-height:180px;
     display:none;
 }
 
+.desktop-talk{
+    display:block;
+}
+
 @media (max-width:768px){
-
-    .navbar{
-        padding:15px 20px;
-    }
-
-    .nav-container{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-    }
-
-    .logo{
-        font-size:2rem;
-        font-weight:700;
-    }
 
     .menu-toggle{
         display:block;
-        font-size:2rem;
-        margin-left:auto;
-        z-index:1001;
     }
 
-    .btn-primary{
+    .desktop-talk{
         display:none;
+    }
+
+    .mobile-talk{
+        display:block;
     }
 
     nav{
+        display:none;
         position:absolute;
-        top:80px;
+        top:82px;
         left:0;
         width:100%;
         background:#fff;
-        display:none;
         box-shadow:0 10px 30px rgba(0,0,0,.08);
     }
 
@@ -1691,24 +1671,10 @@ min-height:180px;
     }
 
     .nav-links{
-        display:flex;
         flex-direction:column;
+        align-items:center;
         gap:20px;
-        padding:25px;
-        text-align:center;
-    }
-}
-
-@keyframes slideDown{
-
-    from{
-        opacity:0;
-        transform:translateY(-20px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
+        padding:30px 0;
     }
 
 }

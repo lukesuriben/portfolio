@@ -49,24 +49,10 @@ const nav = document.querySelector("nav");
 
 menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
-
-    // Palitan ang icon
-    if (nav.classList.contains("active")) {
-        menuToggle.innerHTML = "&times;";
-    } else {
-        menuToggle.innerHTML = "☰";
-    }
 });
 
-// Auto close kapag pinili ang menu
 document.querySelectorAll(".nav-links a").forEach(link => {
-
     link.addEventListener("click", () => {
-
         nav.classList.remove("active");
-        menuToggle.innerHTML = "☰";
-
     });
-
 });
-
