@@ -45,15 +45,10 @@ behavior:"smooth"
 
 
 const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const nav = document.querySelector("nav");
 
 menuToggle.addEventListener("click", () => {
-
-    navLinks.classList.toggle("active");
-
-    menuToggle.textContent =
-        navLinks.classList.contains("active") ? "✕" : "☰";
-
+    nav.classList.toggle("active");
 });
 
 // Auto close kapag pinindot ang menu
@@ -69,3 +64,4 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
     });
 
 });
+

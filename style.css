@@ -170,8 +170,8 @@ NAVIGATION
     display:flex;
     justify-content:space-between;
     align-items:center;
+    width:100%;
 }
-
 
 /* ==============================
 BUTTONS
@@ -1632,65 +1632,6 @@ min-height:180px;
 
 }
 
-/* ==========================
-   MOBILE NAVIGATION
-========================== */
-
-.menu-toggle{
-    display:none;
-    font-size:2rem;
-    background:none;
-    border:none;
-    cursor:pointer;
-    color:#111827;
-}
-
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-
-        position:absolute;
-
-        top:100%;
-
-        left:0;
-
-        width:100%;
-
-        background:#fff;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:25px;
-
-        padding:30px 0;
-
-        display:none;
-
-        box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    }
-
-    .nav-links.active{
-
-        display:flex;
-
-    }
-
-    .navbar .btn{
-
-        display:none;
-
-    }
-
-}
-
 /* =====================================
    MOBILE NAVIGATION
 ===================================== */
@@ -1699,9 +1640,8 @@ min-height:180px;
     display:none;
     background:none;
     border:none;
-    font-size:32px;
+    font-size:2rem;
     cursor:pointer;
-    color:#111827;
 }
 
 .mobile-talk{
@@ -1710,58 +1650,53 @@ min-height:180px;
 
 @media (max-width:768px){
 
-    .nav-container{
-        position:relative;
+    .navbar{
+        padding:15px 20px;
     }
 
-    .desktop-talk{
-        display:none;
+    .nav-container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo{
+        font-size:2rem;
+        font-weight:700;
     }
 
     .menu-toggle{
         display:block;
+        font-size:2rem;
+        margin-left:auto;
         z-index:1001;
     }
 
-    .nav-links{
-
-        position:absolute;
-
-        top:100%;
-
-        left:0;
-
-        width:100%;
-
-        background:#fff;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:22px;
-
-        padding:30px 0;
-
+    .btn-primary{
         display:none;
-
-        border-radius:0 0 16px 16px;
-
-        box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-        animation:slideDown .25s ease;
-
     }
 
-    .nav-links.active{
-        display:flex;
+    nav{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        display:none;
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
     }
 
-    .mobile-talk{
+    nav.active{
         display:block;
-        margin-top:10px;
     }
 
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        padding:25px;
+        text-align:center;
+    }
 }
 
 @keyframes slideDown{
