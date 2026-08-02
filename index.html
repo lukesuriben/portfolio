@@ -1,1084 +1,1262 @@
+admin: [
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
+    <!-- =========================================
+         META
+    ========================================== -->
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Luke Anthony Suriben | Virtual Assistant</title>
+    <title>
+        Luke Suriben | Operations Virtual Assistant
+    </title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Professional Operations Virtual Assistant providing administrative support, workflow optimization, documentation, research, and business operations support.">
+
+    <meta name="keywords"
+        content="Virtual Assistant, Operations VA, Administrative Assistant, Executive Assistant, Portfolio">
+
+    <meta name="author" content="Luke Suriben">
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- =========================================
+         REMIX ICON
+    ========================================== -->
 
-    <link rel="stylesheet"
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div id="progress-bar" class="scroll-progress"></div>''
+    <!-- =========================================
+         HEADER
+    ========================================== -->
 
-<header class="navbar">
+    <header class="header">
 
-    <div class="container nav-container">
+        <div class="container">
 
-        <a href="#" class="logo">
-            Hi! I'm Luke
-        </a>
+            <nav class="navbar">
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+                <!-- Logo -->
 
-        <nav id="main-nav">
+                <a href="#home" class="navbar__logo">
 
-            <ul class="nav-links">
-
-                <li><a href="#help">How I Help</a></li>
-
-                <li><a href="#journey">Journey</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#tools">Tools</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-                <li class="mobile-talk">
-                    <a href="#contact" class="btn-primary">Let's Talk</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <a href="#contact" class="btn-primary desktop-talk">
-            Let's Talk
-        </a>
-
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <div class="container hero-grid">
-
-        <div class="hero-content">
-
-            <span class="hero-role">
-                Operations Virtual Assistant
-            </span>
-
-            <h1>
-                Helping Businesses
-                <span>Work Smarter</span>
-            </h1>
-            
-            <h2>
-                Through organized operations,
-                efficient systems, and smart automation.
-            </h2>
-
-            <p class="hero-description">
-
-                I help business owners streamline operations,
-                build reliable systems, and eliminate repetitive
-                work so they can focus on growing their business.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="btn-primary">
-                    Let's Work Together
-                </a>
-
-                <a href="assets/Luke_Suriben_Resume.pdf"
-                   class="btn-secondary"
-                   target="_blank">
-
-                    View Resume
+                    Luke<span class="navbar__logo-accent">.</span>
 
                 </a>
 
-            </div>
+                <!-- Navigation -->
 
-            <div class="hero-highlights">
+                <ul class="navbar__menu">
 
-                <div class="highlight-card">
+                    <li>
 
-                    <h3>15+</h3>
+                        <a href="#home" class="navbar__link">
 
-                    <span>Years Experience</span>
+                            Home
 
-                </div>
+                        </a>
 
-                <div class="highlight-card">
+                    </li>
 
-                    <h3>IT</h3>
+                    <li>
 
-                    <span>Systems Developer</span>
+                        <a href="#tools" class="navbar__link">
 
-                </div>
+                            Tools
 
-                <div class="highlight-card">
+                        </a>
 
-                    <h3>OA</h3>
+                    </li>
 
-                    <span>Product Researcher</span>
+                    <li>
 
-                </div>
+                        <a href="#services" class="navbar__link">
 
-            </div>
+                            Services
 
-        </div>
+                        </a>
 
-        <div class="hero-image">
+                    </li>
 
-            <img src="images/Profile.jpg"
-                 alt="Luke Anthony Suriben">
+                    <li>
 
-        </div>
+                        <a href="#work" class="navbar__link">
 
-    </div>
+                            View My Work
 
-</section>
+                        </a>
 
-<section id="help" class="help">
+                    </li>
 
-    <div class="container">
+                    <li>
 
-        <span class="section-tag">HOW I HELP</span>
+                        <a href="#about" class="navbar__link">
 
-        <h2>How I Can Help Your Business</h2>
+                            About
 
-        <p class="section-description">
-            I provide reliable administrative support, technical expertise, and workflow automation
-            to help businesses become more organized, efficient, and productive.
-        </p>
+                        </a>
 
-        <div class="help-grid">
+                    </li>
 
-            <div class="help-card">
+                    <li>
 
-                <i class="fa-solid fa-briefcase"></i>
+                        <a href="#contact" class="navbar__link">
 
-                <h3>Administrative Support</h3>
+                            Contact
 
-                <p>
-                    Email management, calendar scheduling, document preparation,
-                    data entry, and day-to-day administrative assistance.
-                </p>
+                        </a>
 
-            </div>
+                    </li>
 
-            <div class="help-card">
-
-                <i class="fa-solid fa-gears"></i>
-
-                <h3>Operations Support</h3>
-
-                <p>
-                    Improve workflows, organize processes,
-                    document SOPs, and keep business operations running smoothly.
-                </p>
-
-            </div>
-
-            <div class="help-card">
-
-                <i class="fa-solid fa-robot"></i>
-
-                <h3>Workflow Automation</h3>
-
-                <p>
-                    Build automations using n8n, AI tools,
-                    and Google Workspace to eliminate repetitive tasks.
-                </p>
-
-            </div>
-
-            <div class="help-card">
-
-                <i class="fa-solid fa-headset"></i>
-
-                <h3>Customer Support</h3>
-
-                <p>
-                    Professional email support, live chat,
-                    customer follow-ups, and order management.
-                </p>
-
-            </div>
-
-            <div class="help-card">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <h3>Amazon Product Research</h3>
-
-                <p>
-                    Product sourcing using SellerAmp and Keepa,
-                    profitability analysis, and online arbitrage research.
-                </p>
-
-            </div>
-
-            <div class="help-card">
-
-                <i class="fa-solid fa-laptop-code"></i>
-
-                <h3>Technical Support</h3>
-
-                <p>
-                    Computer troubleshooting, systems support,
-                    networking, and IT assistance backed by years of experience.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="brand-statement">
-
-    <div class="container">
-
-        <p>
-
-        Helping businesses become more organized,
-        efficient, and productive through
-        systems, operations, and automation.
-
-        </p>
-
-    </div>
-
-</section>
-
-<section id="journey" class="journey" data-aos="fade-right">
-
-    <div class="container">
-
-        <span class="section-tag">JOURNEY</span>
-
-        <h2>My Professional Journey</h2>
-
-        <p class="section-description">
-            Over the years, I've built a diverse background in IT, systems development,
-            administration, and business operations—bringing a unique perspective to every client I support.
-        </p>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2007–2008
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Warehouse Clerk</h3>
-
-                    <p>
-                        Developed strong organizational skills by managing inventory,
-                        coordinating deliveries, and maintaining accurate records.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2009–2010
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Computer Technician</h3>
-
-                    <p>
-                        Built a strong foundation in troubleshooting, problem-solving,
-                        and delivering reliable technical support.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2010–2012
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Network Administrator</h3>
-
-                    <p>
-                        Ensured reliable IT infrastructure that kept daily business operations running smoothly.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2012–2025
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Computer Programmer</h3>
-
-                    <p>
-                        Designed and developed company-wide business systems that replaced manual processes,
-                        improved operational efficiency, and supported everyday business operations.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    Present
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Virtual Assistant & Business Owner</h3>
-
-                    <p>
-                        Providing administrative support, automation,
-                        customer service, and Amazon product research while managing a printing business.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="projects" class="projects">
-
-    <div class="container">
-
-        <span class="section-tag">FEATURED PROJECTS</span>
-
-        <h2>Projects That Delivered Real Business Value</h2>
-
-        <p class="section-description">
-            Throughout my career, I have designed systems, improved workflows,
-            and implemented automation that helped businesses become more
-            organized and efficient.
-        </p>
-
-        <div class="project-grid">
-
-            <article class="project-card">
-
-                <div class="project-icon">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-
-                <h3>Business Systems Development</h3>
-
-                <p>
-                    Designed and developed company-wide systems for inventory,
-                    payroll, bookkeeping, and production, replacing manual
-                    workflows and supporting daily business operations.
-                </p>
-
-                <ul>
-                    <li>Inventory Management</li>
-                    <li>Payroll System</li>
-                    <li>Production Monitoring</li>
-                    <li>Bookkeeping System</li>
                 </ul>
 
-            </article>
+                <!-- CTA -->
 
-            <article class="project-card">
+                <a href="#contact" class="button button--primary navbar__button">
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
+                    Hire Me
 
-                <h3>Workflow Automation</h3>
+                </a>
 
-                <p>
-                    Built automation using n8n to streamline customer inquiries,
-                    automate repetitive tasks, and improve business efficiency.
-                </p>
+                <!-- Mobile Toggle -->
 
-                <ul>
-                    <li>Facebook Automation</li>
-                    <li>AI Chatbot</li>
-                    <li>Google Sheets Integration</li>
-                    <li>Lead Automation</li>
-                </ul>
+                <button class="navbar__toggle" aria-label="Toggle Navigation">
 
-            </article>
+                    <span></span>
 
-            <article class="project-card">
+                    <span></span>
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-store"></i>
-                </div>
+                    <span></span>
 
-                <h3>Printing Business Operations</h3>
+                </button>
 
-                <p>
-                    Managed the daily operations of a printing business while
-                    handling customer service, design coordination, and workflow
-                    improvements.
-                </p>
-
-                <ul>
-                    <li>Customer Support</li>
-                    <li>Order Management</li>
-                    <li>Design Coordination</li>
-                    <li>Business Operations</li>
-                </ul>
-
-            </article>
+            </nav>
 
         </div>
 
-    </div>
+    </header>
 
-</section>
+    <!-- =========================================
+         MAIN
+    ========================================== -->
 
-<!-- =======================================================
-TOOLS & TECHNOLOGIES
-======================================================= -->
+    <main>
 
-<section class="tools" id="tools">
+        <!-- =========================================
+             HERO
+        ========================================== -->
 
-    <div class="container">
+        <section id="home" class="hero">
 
-        <div class="section-header">
+            <div class="container hero__container">
 
-            <span class="section-tag">
-                TOOLS & TECHNOLOGIES
-            </span>
+                <!-- LEFT COLUMN -->
 
-            <h2>Tools I Use to Get Things Done</h2>
+                <div class="hero__content">
 
-            <p class="section-description">
+                    <span class="section-badge">
 
-                A combination of powerful tools that help me stay
-                efficient, organized, and productive while supporting
-                business operations and workflow automation.
+                        Operations Virtual Assistant
 
-            </p>
-
-        </div>
-
-        <div class="tools-grid">
-
-            <!-- Productivity -->
-
-            <article class="tool-card">
-
-                <div class="tool-header">
-
-                    <div class="tool-category-icon">
-
-                        <i class="fa-solid fa-bullseye"></i>
-
-                    </div>
-
-                    <h3>Productivity</h3>
-
-                    <span class="tool-level">
-                        Daily Use
                     </span>
 
-                    <div class="tool-line"></div>
+                    <h1 class="hero__title">
+
+                        Helping businesses
+
+                        <span>Stay Organized,</span>
+
+                        <span>Productive,</span>
+
+                        <span>and ready for growth</span>
+
+                    </h1>
+
+                    <p class="hero__description">
+
+                        I help entrepreneurs simplify daily operations through
+                        reliable administrative support, workflow optimization,
+                        documentation, and organized systems—so they can focus
+                        on growing their business.
+
+                    </p>
+
+                    <div class="hero__buttons">
+
+                        <a href="#contact" class="button button--primary">
+
+                            Let's Work Together
+
+                        </a>
+
+                        <a href="#work" class="button button--secondary">
+
+                            View My Work
+
+                        </a>
+
+                    </div>
+
+                    <ul class="hero__highlights">
+
+                        <li>
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                            Administrative Support
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                            Workflow Optimization
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                            Research & Documentation
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                            Business Operations
+
+                        </li>
+
+                    </ul>
 
                 </div>
 
-                <div class="tool-list">
+                <!-- RIGHT COLUMN -->
 
-                    <div class="tool-item">
+                <div class="hero__visual">
 
-                        <img src="images/logos/Microsoft365.svg"
-                             alt="Microsoft 365"
-                             loading="lazy">
+                    <article class="profile-card">
 
-                        <span>Microsoft 365</span>
+                        <div class="profile-card__image">
 
-                    </div>
+                            <img src="assets/images/profile.png" alt="Luke Suriben">
 
-                    <div class="tool-item">
+                        </div>
 
-                        <img src="images/logos/Excel.svg"
-                             alt="Excel"
-                             loading="lazy">
+                        <div class="profile-card__content">
 
-                        <span>Excel</span>
+                            <h3>
 
-                    </div>
+                                Luke Suriben
 
-                    <div class="tool-item">
+                            </h3>
 
-                        <img src="images/logos/Google.svg"
-                             alt="Google Workspace"
-                             loading="lazy">
+                            <p class="profile-card__role">
+
+                                Operations Virtual Assistant
+
+                            </p>
+
+                            <div class="profile-card__availability">
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Available for Remote Work
+
+                            </div>
+
+                            <div class="profile-card__divider"></div>
+
+                            <ul class="profile-card__skills">
+
+                                <li>
+
+                                    <i class="ri-check-line"></i>
+
+                                    Detail-Oriented
+
+                                </li>
+
+                                <li>
+
+                                    <i class="ri-check-line"></i>
+
+                                    Organized
+
+                                </li>
+
+                                <li>
+
+                                    <i class="ri-check-line"></i>
+
+                                    Reliable
+
+                                </li>
+
+                                <li>
+
+                                    <i class="ri-check-line"></i>
+
+                                    Fast Learner
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TRUSTED TOOLS
+        ========================================== -->
+
+        <section id="tools" class="tools">
+
+            <div class="container">
+
+                <span class="section-badge">
+
+                    Trusted Tools
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Software I Work With
+
+                </h2>
+
+                <p class="section-description">
+
+                    I use trusted productivity, collaboration, design, and
+                    development tools to deliver organized, efficient, and
+                    high-quality work.
+
+                </p>
+
+                <div class="tools__grid">
+
+                    <article class="tool">
+
+                        <img src="assets/icons/google.svg" alt="Google Workspace">
 
                         <span>Google Workspace</span>
 
-                    </div>
+                    </article>
 
-                    <div class="tool-item">
+                    <article class="tool">
 
-                        <img src="images/logos/GSheets.svg"
-                             alt="Google Sheets"
-                             loading="lazy">
+                        <img src="assets/icons/microsoft365.svg" alt="Microsoft 365">
 
-                        <span>Google Sheets</span>
+                        <span>Microsoft 365</span>
 
-                    </div>
+                    </article>
 
-                </div>
+                    <article class="tool">
 
-            </article>
-
-            
-
-
-
-            <!-- Automation -->
-
-            <article class="tool-card">
-
-                <div class="tool-header">
-
-                    <div class="tool-category-icon">
-
-                        <i class="fa-solid fa-share-nodes"></i>
-
-                    </div>
-
-                    <h3>Automation & AI</h3>
-
-                    <span class="tool-level">
-
-                        Advanced
-
-                    </span>
-
-                    <div class="tool-line"></div>
-
-                </div>
-
-                <div class="tool-list">
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/n8n.svg"
-                             alt="n8n"
-                             loading="lazy">
-
-                        <span>n8n</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/chatgpt.svg"
-                             alt="ChatGPT"
-                             loading="lazy">
-
-                        <span>ChatGPT</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/claude.svg"
-                             alt="Claude"
-                             loading="lazy">
-
-                        <span>Claude</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- Design -->
-
-            <article class="tool-card">
-
-                <div class="tool-header">
-
-                    <div class="tool-category-icon">
-
-                        <i class="fa-solid fa-palette"></i>
-
-                    </div>
-
-                    <h3>Design</h3>
-
-                    <span class="tool-level">
-
-                        Advanced
-
-                    </span>
-
-                    <div class="tool-line"></div>
-
-                </div>
-
-                <div class="tool-list">
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/photoshop.svg"
-                             alt="Adobe Photoshop"
-                             loading="lazy">
-
-                        <span>Adobe Photoshop</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/Canva.svg"
-                             alt="Canva"
-                             loading="lazy">
+                        <img src="assets/icons/canva.svg" alt="Canva">
 
                         <span>Canva</span>
 
-                    </div>
+                    </article>
 
-                    <div class="tool-item">
+                    <article class="tool">
 
-                        <img src="images/logos/filmora.svg"
-                             alt="Filmora"
-                             loading="lazy">
+                        <img src="assets/icons/chatgpt.svg" alt="ChatGPT">
 
-                        <span>Filmora</span>
+                        <span>ChatGPT</span>
 
-                    </div>
+                    </article>
 
-                </div>
+                    <article class="tool">
 
-            </article>
+                        <img src="assets/icons/github.svg" alt="GitHub">
 
-                        <!-- Business Systems -->
+                        <span>GitHub</span>
 
-            <article class="tool-card">
+                    </article>
 
-                <div class="tool-header">
+                    <article class="tool">
 
-                    <div class="tool-category-icon">
+                        <img src="assets/icons/html5.svg" alt="HTML5">
 
-                        <i class="fa-solid fa-server"></i>
+                        <span>HTML5</span>
 
-                    </div>
+                    </article>
 
-                    <h3>Business Systems</h3>
+                    <article class="tool">
 
-                    <span class="tool-level">
-                        Advanced
-                    </span>
+                        <img src="assets/icons/css3.svg" alt="CSS3">
 
-                    <div class="tool-line"></div>
+                        <span>CSS3</span>
 
-                </div>
+                    </article>
 
-                <div class="tool-list">
+                    <article class="tool">
 
-                    <div class="tool-item">
+                        <img src="assets/icons/javascript.svg" alt="JavaScript">
 
-                        <img src="images/logos/windows.svg"
-                             alt="Windows Server"
-                             loading="lazy">
+                        <span>JavaScript</span>
 
-                        <span>Windows Server</span>
+                    </article>
 
-                    </div>
+                    <article class="tool">
 
-                    <div class="tool-item">
+                        <img src="assets/icons/photoshop.svg" alt="Adobe Photoshop">
 
-                        <img src="images/logos/quickbooks.svg"
-                             alt="QuickBooks"
-                             loading="lazy">
+                        <span>Photoshop</span>
 
-                        <span>QuickBooks</span>
+                    </article>
 
-                    </div>
+                    <article class="tool">
 
-                    <div class="tool-item">
+                        <img src="assets/icons/notion.svg" alt="Notion">
 
-                        <img src="images/logos/Foxpro.png"
-                             alt="Visual FoxPro"
-                             loading="lazy">
+                        <span>Notion</span>
 
-                        <span>Visual FoxPro</span>
+                    </article>
 
-                    </div>
+                    <article class="tool">
 
-                    <div class="tool-item">
+                        <img src="assets/icons/quickbooks.svg" alt="Quickbooks">
 
-                        <img src="images/logos/visualbasic.png"
-                             alt="Visual Basic"
-                             loading="lazy">
+                        <span>Quickbooks</span>
 
-                        <span>Visual Basic</span>
-
-                    </div>
+                    </article>
 
                 </div>
-
-            </article>
-
-
-
-            <!-- E-commerce -->
-
-            <article class="tool-card">
-
-                <div class="tool-header">
-
-                    <div class="tool-category-icon">
-
-                        <i class="fa-solid fa-cart-shopping"></i>
-
-                    </div>
-
-                    <h3>E-commerce</h3>
-
-                    <span class="tool-level">
-                        Experienced
-                    </span>
-
-                    <div class="tool-line"></div>
-
-                </div>
-
-                <div class="tool-list">
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/selleramp.png"
-                             alt="SellerAmp"
-                             loading="lazy">
-
-                        <span>SellerAmp</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/keepa.png"
-                             alt="Keepa"
-                             loading="lazy">
-
-                        <span>Keepa</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- Communication -->
-
-            <article class="tool-card">
-
-                <div class="tool-header">
-
-                    <div class="tool-category-icon">
-
-                        <i class="fa-solid fa-comments"></i>
-
-                    </div>
-
-                    <h3>Communication</h3>
-
-                    <span class="tool-level">
-                        Daily Use
-                    </span>
-
-                    <div class="tool-line"></div>
-
-                </div>
-
-                <div class="tool-list">
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/Zoom.svg"
-                             alt="Zoom"
-                             loading="lazy">
-
-                        <span>Zoom</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/Teams.svg"
-                             alt="Microsoft Teams"
-                             loading="lazy">
-
-                        <span>Microsoft Teams</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/outlook.svg"
-                             alt="Outlook"
-                             loading="lazy">
-
-                        <span>Outlook</span>
-
-                    </div>
-
-                    <div class="tool-item">
-
-                        <img src="images/logos/Zello.png"
-                             alt="Zello"
-                             loading="lazy">
-
-                        <span>Zello</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-
-
-        <!-- Learning Banner -->
-
-        <div class="learning-banner">
-
-            <div class="learning-icon">
-
-                <i class="fa-solid fa-award"></i>
 
             </div>
 
-            <div class="learning-content">
+        </section>
 
-                <h3>
+        <!-- =========================================
+             SERVICES
+        ========================================== -->
 
-                    Always Learning, Always Improving
+        <section id="services" class="services">
 
-                </h3>
+            <div class="container">
 
-                <p>
+                <span class="section-badge">
 
-                    I continuously explore new technologies,
-                    AI tools, automation platforms, and business
-                    systems to deliver better solutions,
-                    streamline operations, and create greater
-                    value for every business I support.
+                    Professional Services
+
+                </span>
+
+                <h2 class="section-title">
+
+                    How I Can Support Your Business
+
+                </h2>
+
+                <p class="section-description">
+
+                    From daily administrative tasks to workflow improvements,
+                    I provide reliable support that helps businesses stay
+                    organized and operate more efficiently.
 
                 </p>
 
+                <div class="services__grid">
+
+                    <!-- Card 1 -->
+
+                    <article class="service-card">
+
+                        <div class="service-card__icon">
+
+                            <i class="ri-folder-chart-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Administrative Support
+
+                        </h3>
+
+                        <ul>
+
+                            <li>Email Management</li>
+
+                            <li>Calendar Management</li>
+
+                            <li>Document Preparation</li>
+
+                            <li>File Organization</li>
+
+                        </ul>
+
+                    </article>
+
+                    <!-- Card 2 -->
+
+                    <article class="service-card">
+
+                        <div class="service-card__icon">
+
+                            <i class="ri-settings-3-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Workflow Optimization
+
+                        </h3>
+
+                        <ul>
+
+                            <li>Task Coordination</li>
+
+                            <li>Process Improvement</li>
+
+                            <li>SOP Documentation</li>
+
+                            <li>Operations Support</li>
+
+                        </ul>
+
+                    </article>
+
+                    <!-- Card 3 -->
+
+                    <article class="service-card">
+
+                        <div class="service-card__icon">
+
+                            <i class="ri-search-eye-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Research & Documentation
+
+                        </h3>
+
+                        <ul>
+
+                            <li>Market Research</li>
+
+                            <li>Product Research</li>
+
+                            <li>Data Collection</li>
+
+                            <li>Report Preparation</li>
+
+                        </ul>
+
+                    </article>
+
+                    <!-- Card 4 -->
+
+                    <article class="service-card">
+
+                        <div class="service-card__icon">
+
+                            <i class="ri-briefcase-4-line"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Business Operations
+
+                        </h3>
+
+                        <ul>
+
+                            <li>CRM Updates</li>
+
+                            <li>Data Entry</li>
+
+                            <li>Team Coordination</li>
+
+                            <li>Administrative Assistance</li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             FEATURED CASE STUDY
+        ========================================== -->
+
+        <section id="work" class="case-study">
+
+            <div class="container">
+
+                <span class="section-badge">
+
+                    Work
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Operations VA Portfolio Website
+
+                </h2>
+
+                <p class="section-description">
+
+                    A responsive portfolio website designed and developed from
+                    scratch to establish a professional online presence and
+                    showcase administrative, technical, and creative skills.
+
+                </p>
+
+                <div class="case-study__wrapper">
+
+                    <!-- LEFT -->
+
+                    <div class="case-study__image">
+
+                        <img src="assets/images/featured-project.png" alt="Operations VA Portfolio Website">
+
+                    </div>
+
+                    <!-- RIGHT -->
+
+                    <div class="case-study__content">
+
+                        <div class="case-study__block">
+
+                            <h3>
+
+                                Built From Scratch
+
+                            </h3>
+
+                            <p>
+
+                                Planned, designed, and developed using modern
+                                HTML, CSS, and JavaScript with a strong focus on
+                                responsive design, clean user experience, and
+                                maintainable code.
+
+                            </p>
+
+                        </div>
+
+                        <div class="case-study__block">
+
+                            <h3>
+
+                                My Responsibilities
+
+                            </h3>
+
+                            <ul>
+
+                                <li>UI / UX Design</li>
+
+                                <li>Frontend Development</li>
+
+                                <li>Responsive Layout</li>
+
+                                <li>Performance Optimization</li>
+
+                                <li>GitHub Deployment</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="case-study__block">
+
+                            <h3>
+
+                                Built With
+
+                            </h3>
+
+                            <div class="tech-stack">
+
+                                <span>HTML5</span>
+
+                                <span>CSS3</span>
+
+                                <span>JavaScript</span>
+
+                                <span>GitHub Pages</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="case-study__block">
+
+                            <h3>
+
+                                Project Highlights
+
+                            </h3>
+
+                            <ul>
+
+                                <li>Fully Responsive</li>
+
+                                <li>Mobile Friendly</li>
+
+                                <li>SEO Ready</li>
+
+                                <li>Fast Loading</li>
+
+                                <li>Modern UI Design</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="case-study__buttons">
+
+                            <a href="https://lukesuriben.github.io/portfolio/" target="_blank"
+                                class="button button--primary">
+
+                                Live Website
+
+                            </a>
+
+                            <a href="#contact" class="button button--secondary">
+
+                                Let's Work Together
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             OTHER PROFESSIONAL WORK
+        ========================================== -->
+
+        <section class="projects">
+
+            <div class="container">
+
+                <span class="section-badge">
+
+                    Other Professional Work
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Additional Projects & Experience
+
+                </h2>
+
+                <p class="section-description">
+
+                    In addition to web development, I also have experience
+                    supporting business operations, creating print-ready
+                    designs, and enhancing professional images.
+
+                </p>
+
+                <div class="projects__grid">
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card">
+
+                        <img src="assets/images/project-admin.png" alt="Administrative Operations">
+
+                        <div class="project-card__content">
+
+                            <span class="project-card__category">
+
+                                Administrative Support
+
+                            </span>
+
+                            <h3>
+
+                                Administrative Operations
+
+                            </h3>
+
+                            <p>
+
+                                Supported day-to-day business operations through
+                                document management, scheduling, data organization,
+                                and administrative coordination.
+
+                            </p>
+
+                            <div class="project-card__actions">
+
+                                <button class="button button--secondary project-card__view" data-gallery="admin">
+
+                                    <i class="ri-image-line"></i>
+
+                                    View Gallery
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card">
+
+                        <img src="assets/images/project-graphics.png" alt="Custom ID Card Design">
+
+                        <div class="project-card__content">
+
+                            <span class="project-card__category">
+
+                                Graphic Design
+
+                            </span>
+
+                            <h3>
+
+                                Creative Design Solutions
+
+                            </h3>
+
+                            <p>
+
+                                Professional graphic design for print and digital media,
+                                including promotional materials, custom merchandise, branding assets,
+                                photo editing, restoration, and print-ready artwork.
+
+                            </p>
+
+                            <div class="project-card__actions">
+
+                                <button class="button button--secondary project-card__view" data-gallery="graphics">
+
+                                    <i class="ri-image-line"></i>
+
+                                    View Gallery
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card">
+
+                        <img src="assets/images/project-pr.png" alt="Product Research">
+
+                        <div class="project-card__content">
+
+                            <span class="project-card__category">
+
+                                Online Arbitrage
+
+                            </span>
+
+                            <h3>
+
+                                Product Research
+
+                            </h3>
+
+                            <p>
+
+                                Identifying profitable Amazon products using SellerAmp SAS and Keepa by analyzing
+                                pricing history,
+                                sales rank, competition, and ROI to support smart sourcing decisions.
+
+                            </p>
+
+                            <div class="project-card__actions">
+
+                                <button class="button button--secondary project-card__view" data-gallery="research">
+
+                                    <i class="ri-image-line"></i>
+
+                                    View Gallery
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <div class="about__wrapper">
+
+                    <!-- LEFT -->
+
+                    <div class="about__image">
+
+                        <img src="assets/images/profile-about.png" alt="Luke Suriben">
+
+                    </div>
+
+                    <!-- RIGHT -->
+
+                    <div class="about__content">
+
+                        <span class="section-badge">
+
+                            Why Work With Me
+
+                        </span>
+
+                        <h2 class="section-title">
+
+                            Why Clients Enjoy
+                            Working With Me
+
+                        </h2>
+
+                        <p class="about__intro">
+
+                            I'm Luke Suriben, an Operations Virtual Assistant
+                            committed to helping business owners stay organized,
+                            simplify daily operations, and create efficient
+                            workflows that support long-term business growth.
+
+                        </p>
+
+                        <div class="about__cards">
+
+                            <article class="about-card">
+
+                                <i class="ri-check-double-line"></i>
+
+                                <div>
+
+                                    <h3>
+
+                                        Reliable Support
+
+                                    </h3>
+
+                                    <p>
+
+                                        Dependable, organized, and committed
+                                        to delivering quality work on time.
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="about-card">
+
+                                <i class="ri-lightbulb-flash-line"></i>
+
+                                <div>
+
+                                    <h3>
+
+                                        Continuous Improvement
+
+                                    </h3>
+
+                                    <p>
+
+                                        Always learning better tools,
+                                        workflows, and systems to
+                                        improve productivity.
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="about-card">
+
+                                <i class="ri-team-line"></i>
+
+                                <div>
+
+                                    <h3>
+
+                                        Easy To Work With
+
+                                    </h3>
+
+                                    <p>
+
+                                        Professional communication,
+                                        positive attitude,
+                                        and collaborative mindset.
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section id="contact" class="contact">
+
+            <div class="container">
+
+                <div class="contact__wrapper">
+
+                    <span class="section-badge">
+
+                        Let's Connect
+
+                    </span>
+
+                    <h2 class="section-title">
+
+                        Let's Work Together
+
+                    </h2>
+
+                    <p class="section-description">
+
+                        Whether you need reliable administrative support,
+                        workflow improvements, or someone to help keep your
+                        business organized, I'd be happy to discuss how I can help.
+
+                    </p>
+
+                    <div class="contact__actions">
+
+                        <a href="mailto:va.lukesuriben@gmail.com" class="button button--primary">
+
+                            <i class="ri-mail-send-line"></i>
+
+                            Send Email
+
+                        </a>
+
+                        <a href="https://linkedin.com" target="_blank" class="button button--secondary">
+
+                            <i class="ri-linkedin-box-line"></i>
+
+                            LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer__content">
+
+                    <a href="#home" class="footer__logo">
+
+                        Luke<span>.</span>
+
+                    </a>
+
+                    <p>
+
+                        Helping business owners stay organized, save time,
+                        and scale smarter through reliable administrative support.
+
+                    </p>
+
+                    <ul class="footer__links">
+
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#tools">Tools</a></li>
+
+                        <li><a href="#services">Services</a></li>
+
+                        <li><a href="#work">Work</a></li>
+
+                        <li><a href="#about">About</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer__bottom">
+
+                    <p>
+
+                        © 2026 Luke Suriben. All rights reserved.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <!-- =========================================
+     PROJECT GALLERY MODAL
+    ========================================== -->
+
+    <div class="gallery-modal" id="galleryModal">
+
+        <div class="gallery-modal__overlay"></div>
+
+        <div class="gallery-modal__content">
+
+            <button class="gallery-modal__close">
+
+                <i class="ri-close-line"></i>
+
+            </button>
+
+            <button class="gallery-modal__prev">
+
+                <i class="ri-arrow-left-s-line"></i>
+
+            </button>
+
+            <div class="gallery-modal__image-wrapper">
+
+                <img id="galleryImage" src="" alt="Project Image">
+
+                <div class="gallery-modal__counter">
+
+                    1 / 1
+
+                </div>
+
+            </div>
+
+            <button class="gallery-modal__next">
+
+                <i class="ri-arrow-right-s-line"></i>
+
+            </button>
+
+            <div class="gallery-modal__footer">
+
+                <div class="gallery-modal__details">
+
+                    <h4>
+
+                        Project Notes
+
+                    </h4>
+
+                    <p id="galleryNote">
+
+                        No notes available.
+
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-</section>
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
 
-
-<!-- Contact Section -->
-
-<section class="contact" id="contact">
-
-    <div class="container">
-
-        <span class="section-badge">CONTACT</span>
-
-        <h2>Let's Work Together</h2>
-
-        <p class="section-description">
-            Whether you need administrative support, business systems,
-            or workflow automation, I'd love to learn more about your
-            business and how I can help.
-        </p>
-
-        <div class="contact-wrapper">
-
-            <div class="contact-info">
-             
-                <a
-                    href="mailto:va.lukesuriben@gmail.com?subject=Project%20Inquiry&body=Hi%20Luke,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AThank%20you!"
-                    class="info-card email-card">
-
-                    <div class="info-icon">
-                        <img src="images/icons/mail.svg" alt="Email">
-                    </div>
-
-                    <div class="info-content">
-                        <h4>Email</h4>
-                        <p>va.lukesuriben@gmail.com</p>
-                    </div>
-
-                </a>
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-                        <img src="images/icons/linkedin.svg" alt="LinkedIn">
-                    </div>
-
-                    <div class="info-content">
-                        <h4>LinkedIn</h4>
-                        <p>www.linkedin.com/in/luke-suriben-99561b423</p>
-                    </div>
-
-                </div>
-
-                <div class="info-card">
-                    
-                    <div class="info-icon">
-                        <img src="images/icons/map-pinned.svg" alt="Location">
-                    </div>
-
-                    <div class="info-content">
-                        <h4>Location</h4>
-                        <p>Cagayan, Philippines</p>
-                    </div>
-
-                </div>
-
-                <div class="info-card">
-                    
-                    <div class="info-icon">
-                        <img src="images/icons/clock-3.svg" alt="Availability">
-                    </div>
-
-                    <div class="info-content">
-                        <h4>Availability</h4>
-                        <p>Open for Remote Opportunities</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <form
-                id="contactForm"
-                class="contact-form"
-                action="https://api.web3forms.com/submit"
-                method="POST">
-
-                <input
-                    type="hidden"
-                    name="access_key"
-                    value="58d6294f-1d28-4286-817c-a5cb99b84763">
-
-                <input
-                    type="checkbox"
-                    name="botcheck"
-                    class="hidden"
-                    style="display:none;">
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your Name"
-                    required>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me about your project..."
-                    rows="6"
-                    required></textarea>
-
-                <button type="submit" class="primary-btn">
-                    Let's Work Together
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-
-AOS.init({
-
-duration:900,
-
-once:true,
-
-offset:80
-
-});
-
-</script>
-
-<button id="topBtn">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
