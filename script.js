@@ -232,8 +232,8 @@ const galleries = {
         {
             image: "assets/projects/enterprise/sales/processing.PNG",
 
-            note: "This module manages the complete sales transaction workflow, from sales orders and delivery receipts" + 
-            "to invoice processing and purchase order updates. It helps streamline daily sales operations while maintaining" + 
+            note: "This module manages the complete sales transaction workflow, from sales orders and delivery receipts " + 
+            "to invoice processing and purchase order updates. It helps streamline daily sales operations while maintaining " + 
             "accurate records and improving overall efficiency."
         },
 
@@ -285,33 +285,55 @@ const galleries = {
     inventory: [
 
         {
-            image: "assets/projects/enterprise/inventory/menu.png",
-            note: "Inventory Management System"
+            image: "assets/projects/enterprise/inventory/menu.PNG",
+
+            note: "This is the main menu of the Inventory Management System, providing centralized access to inventory maintenance, " +
+            "transaction processing, and reporting modules. It was designed to help users efficiently manage inventory records, " +
+            "monitor stock movements, and streamline day-to-day warehouse operations."
+
         },
 
         {
-            image: "assets/projects/enterprise/inventory/item_file.png",
-            note: "Item Master Management"
+            image: "assets/projects/enterprise/inventory/item_file.PNG",
+
+            note: "The Item File Maintenance module serves as the central repository for product information, " +
+            "allowing users to manage item classifications, descriptions, units of measurement, and inventory settings. " +
+            "It helps maintain accurate master data that supports inventory control, purchasing, sales, and warehouse operations."
         },
 
         {
-            image: "assets/projects/enterprise/inventory/supplier.png",
-            note: "Supplier Management"
+            image: "assets/projects/enterprise/inventory/supplier.PNG",
+
+            note: "The Supplier File Maintenance module centralizes supplier information, including company profiles, contact details, " +
+            "and communication records. It provides a reliable database for purchasing and inventory operations, " + 
+            "helping ensure accurate supplier management and efficient procurement processes."
+
         },
 
         {
-            image: "assets/projects/enterprise/inventory/receiving.png",
-            note: "Receiving Transactions"
+            image: "assets/projects/enterprise/inventory/receiving.PNG",
+
+            note: "The Receiving Transactions module records incoming inventory from suppliers, capturing item details, quantities, " +
+            "unit costs, and reference documents in a single transaction. It helps maintain accurate stock records, " + 
+            "supports inventory valuation, and ensures traceability of all received goods."
+
         },
 
         {
-            image: "assets/projects/enterprise/inventory/physical_inventory.png",
-            note: "Physical Inventory"
+            image: "assets/projects/enterprise/inventory/physical_inventory.PNG",
+
+            note: "The Physical Inventory module records and updates actual stock quantities during inventory counts, " +
+            "helping reconcile system records with on-hand inventory. It supports accurate stock control, minimizes inventory discrepancies, " +
+            "and improves the reliability of inventory management processes."
+
         },
 
         {
-            image: "assets/projects/enterprise/inventory/report.png",
-            note: "Inventory Reports"
+            image: "assets/projects/enterprise/inventory/report.PNG",
+
+            note: "The Inventory Reporting module provides real-time visibility into current stock levels and inventory consumption, " +
+            "enabling users to monitor product availability and support inventory planning. It helps improve purchasing decisions, " +
+            "reduce stock shortages, and maintain optimal inventory levels across operations."
         }
 
     ],
