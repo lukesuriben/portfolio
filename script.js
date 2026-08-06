@@ -372,8 +372,11 @@ const galleries = {
     rawmaterials: [
 
         {
-            image: "assets/projects/enterprise/rawmaterials/menu.png",
-            note: "Raw Materials Inventory System"
+            image: "assets/projects/enterprise/rmw/menu.PNG",
+
+            note: "The Raw Materials Inventory System provides centralized access to modules for managing raw material inventory " +
+            "throughout the production lifecycle. It supports receiving, issuing, quality testing, returns, inventory tracking, lot traceability, " +
+            "and consumption analysis, helping ensure accurate inventory control and efficient material management."
         }
 
     ],
@@ -381,23 +384,30 @@ const galleries = {
     restaurant: [
 
         {
-            image: "assets/projects/enterprise/restaurant/menu.png",
-            note: "Restaurant Logistics"
+            image: "assets/projects/enterprise/restaurant/menu.PNG",
+
+            note: "The Restaurant Logistics System provides centralized access to modules for managing menu items, branch operations, " + 
+            "inventory distribution, and logistics processes across multiple restaurant locations. It streamlines day-to-day operations " +
+            "by supporting accurate inventory control, branch coordination, and efficient supply management."
+
         },
 
         {
-            image: "assets/projects/enterprise/restaurant/process.png",
-            note: "Restaurant Processing"
+            image: "assets/projects/enterprise/restaurant/process.PNG",
+
+            note: "The Processing module manages the distribution of supplies and delivery transactions between the warehouse and restaurant branches. " +
+            "It helps ensure accurate inventory movement, maintain stock availability across locations, and support efficient logistics operations " +
+            "throughout the supply chain."
+
         },
 
         {
-            image: "assets/projects/enterprise/restaurant/reports.png",
-            note: "Restaurant Reports"
-        },
+            image: "assets/projects/enterprise/restaurant/reports.PNG",
 
-        {
-            image: "assets/projects/enterprise/restaurant/inventory.png",
-            note: "Restaurant Inventory"
+            note: "The Reporting module provides operational reports that monitor food cost, inventory distribution, and delivery activities " +
+            "across restaurant branches. It helps management analyze logistics performance, control operational costs, " +
+            "and make informed decisions through accurate and timely reporting."
+
         }
 
     ],
