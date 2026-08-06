@@ -341,18 +341,30 @@ const galleries = {
     production: [
 
         {
-            image: "assets/projects/enterprise/production/production_plan.png",
-            note: "Production Planning"
+            image: "assets/projects/enterprise/production/production_plan.PNG",
+
+            note: "The Production Planning module generates production schedules based on customer orders and purchase requirements, " +
+            "defining the required quantities and production workload for each product. It helps optimize production planning, " +
+            "improve resource utilization, and ensure timely order fulfillment."
+
         },
 
         {
-            image: "assets/projects/enterprise/production/mrp.png",
-            note: "Material Requirements Planning"
+            image: "assets/projects/enterprise/production/mrp.PNG",
+
+            note: "The Material Requirements Planning (MRP) module calculates the raw materials and packaging components required to " +
+            "fulfill production plans based on demand forecasts and manufacturing schedules. It helps optimize material planning, " +
+            "prevent shortages, reduce excess inventory, and ensure production readiness."
+
         },
 
         {
-            image: "assets/projects/enterprise/production/bom.png",
-            note: "Bill of Materials"
+            image: "assets/projects/enterprise/production/bom.PNG",
+
+            note: "The Bill of Materials (BOM) module defines the complete list of raw materials, packaging components, " +
+            "and required quantities needed to manufacture a finished product. It serves as the foundation for production planning, " +
+            "material costing, and inventory control, ensuring consistent product formulation and efficient manufacturing operations."
+
         }
 
     ],
