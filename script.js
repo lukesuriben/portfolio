@@ -221,7 +221,7 @@ const galleries = {
     sales: [
 
         {
-            image: "assets/projects/enterprise/sales/menu.png",
+            image: "assets/projects/enterprise/sales/menu.PNG",
 
             note: "This is the main menu of the Sales Management System, serving as the central navigation hub for" +
             "customer management, product records, sales transactions, reporting, and inquiry modules. " +
@@ -230,7 +230,7 @@ const galleries = {
         },
 
         {
-            image: "assets/projects/enterprise/sales/processing.png",
+            image: "assets/projects/enterprise/sales/processing.PNG",
 
             note: "This module manages the complete sales transaction workflow, from sales orders and delivery receipts" + 
             "to invoice processing and purchase order updates. It helps streamline daily sales operations while maintaining" + 
@@ -238,7 +238,7 @@ const galleries = {
         },
 
         {
-            image: "assets/projects/enterprise/sales/customer_file.png",
+            image: "assets/projects/enterprise/sales/customer_file.PNG",
 
             note: "The Customer File Maintenance module serves as the centralized database for customer information, " +
             "allowing users to maintain customer profiles, contact details, and business records. It ensures accurate, organized, " + 
@@ -246,7 +246,7 @@ const galleries = {
         },
 
         {
-            image: "assets/projects/enterprise/sales/delivery_receipt.png",
+            image: "assets/projects/enterprise/sales/delivery_receipt.PNG",
 
             note: "The Delivery Receipt module records and processes customer deliveries while automatically updating inventory balances " + 
             "and transaction records. It helps ensure accurate order fulfillment, inventory tracking, and complete documentation of every " +
@@ -255,7 +255,7 @@ const galleries = {
         },
 
         {
-            image: "assets/projects/enterprise/sales/sales_invoice.png",
+            image: "assets/projects/enterprise/sales/sales_invoice.PNG",
 
             note: "The Sales Invoice module generates customer invoices by linking completed delivery receipts to billing records, " +
             "helping prevent duplicate invoicing while maintaining accurate sales documentation. This process ensures reliable financial " +
@@ -263,7 +263,7 @@ const galleries = {
         },
 
         {
-            image: "assets/projects/enterprise/sales/po_balance.png",
+            image: "assets/projects/enterprise/sales/po_balance.PNG",
 
             note: "The Purchase Order Balance module monitors outstanding purchase order quantities against completed deliveries, " +
             "providing real-time visibility into remaining commitments. It helps prevent over-delivery, improves inventory planning, " +
@@ -272,7 +272,7 @@ const galleries = {
 
         {
 
-            image: "assets/projects/enterprise/sales/weekly_sales.png",
+            image: "assets/projects/enterprise/sales/weekly_sales.PNG",
 
             note: "The Weekly Sales Report provides a consolidated summary of completed sales transactions within a selected reporting period. " +
             "It enables management to monitor sales performance, review product movement, and support informed business decisions through accurate " +
