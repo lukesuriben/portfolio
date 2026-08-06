@@ -214,14 +214,171 @@ if (year) {
 
 const galleries = {
 
+    /* =====================================================
+       ENTERPRISE BUSINESS SYSTEMS
+    ===================================================== */
+
+    sales: [
+
+        {
+            image: "assets/projects/enterprise/sales/menu.png",
+
+            note: "This is the main menu of the Sales Management System, serving as the central navigation hub for" +
+            "customer management, product records, sales transactions, reporting, and inquiry modules. " +
+            "It was designed to provide users with quick and organized access to daily business operations."
+            
+        },
+
+        {
+            image: "assets/projects/enterprise/sales/processing.png",
+
+            note: "This module manages the complete sales transaction workflow, from sales orders and delivery receipts" + 
+            "to invoice processing and purchase order updates. It helps streamline daily sales operations while maintaining" + 
+            "accurate records and improving overall efficiency."
+        },
+
+        {
+            image: "assets/projects/enterprise/sales/customer_file.png",
+
+            note: "The Customer File Maintenance module serves as the centralized database for customer information, " +
+            "allowing users to maintain customer profiles, contact details, and business records. It ensures accurate, organized, " + 
+            "and up-to-date customer data that supports efficient sales processing and long-term client relationship management."
+        },
+
+        {
+            image: "assets/projects/enterprise/sales/delivery_receipt.png",
+
+            note: "The Delivery Receipt module records and processes customer deliveries while automatically updating inventory balances " + 
+            "and transaction records. It helps ensure accurate order fulfillment, inventory tracking, and complete documentation of every " +
+            "delivery made to customers."
+
+        },
+
+        {
+            image: "assets/projects/enterprise/sales/sales_invoice.png",
+
+            note: "The Sales Invoice module generates customer invoices by linking completed delivery receipts to billing records, " +
+            "helping prevent duplicate invoicing while maintaining accurate sales documentation. This process ensures reliable financial " +
+            "records and supports efficient order-to-cash operations."
+        },
+
+        {
+            image: "assets/projects/enterprise/sales/po_balance.png",
+
+            note: "The Purchase Order Balance module monitors outstanding purchase order quantities against completed deliveries, " +
+            "providing real-time visibility into remaining commitments. It helps prevent over-delivery, improves inventory planning, " +
+            "and ensures accurate order fulfillment throughout the sales process."
+        },
+
+        {
+
+            image: "assets/projects/enterprise/sales/weekly_sales.png",
+
+            note: "The Weekly Sales Report provides a consolidated summary of completed sales transactions within a selected reporting period. " +
+            "It enables management to monitor sales performance, review product movement, and support informed business decisions through accurate " +
+            "and timely reporting."
+
+        }
+
+    ],
+
+    inventory: [
+
+        {
+            image: "assets/projects/enterprise/inventory/menu.png",
+            note: "Inventory Management System"
+        },
+
+        {
+            image: "assets/projects/enterprise/inventory/item_file.png",
+            note: "Item Master Management"
+        },
+
+        {
+            image: "assets/projects/enterprise/inventory/supplier.png",
+            note: "Supplier Management"
+        },
+
+        {
+            image: "assets/projects/enterprise/inventory/receiving.png",
+            note: "Receiving Transactions"
+        },
+
+        {
+            image: "assets/projects/enterprise/inventory/physical_inventory.png",
+            note: "Physical Inventory"
+        },
+
+        {
+            image: "assets/projects/enterprise/inventory/report.png",
+            note: "Inventory Reports"
+        }
+
+    ],
+
+    production: [
+
+        {
+            image: "assets/projects/enterprise/production/production_plan.png",
+            note: "Production Planning"
+        },
+
+        {
+            image: "assets/projects/enterprise/production/mrp.png",
+            note: "Material Requirements Planning"
+        },
+
+        {
+            image: "assets/projects/enterprise/production/bom.png",
+            note: "Bill of Materials"
+        }
+
+    ],
+
+    rawmaterials: [
+
+        {
+            image: "assets/projects/enterprise/rawmaterials/menu.png",
+            note: "Raw Materials Inventory System"
+        }
+
+    ],
+
+    restaurant: [
+
+        {
+            image: "assets/projects/enterprise/restaurant/menu.png",
+            note: "Restaurant Logistics"
+        },
+
+        {
+            image: "assets/projects/enterprise/restaurant/process.png",
+            note: "Restaurant Processing"
+        },
+
+        {
+            image: "assets/projects/enterprise/restaurant/reports.png",
+            note: "Restaurant Reports"
+        },
+
+        {
+            image: "assets/projects/enterprise/restaurant/inventory.png",
+            note: "Restaurant Inventory"
+        }
+
+    ],
+
+    /* =====================================================
+       ADMINISTRATIVE
+    ===================================================== */
+
     admin: [
 
         {
 
             image: "assets/projects/admin/calendar_week.png",
 
-            note: "Organized and managed a weekly executive calendar using Google Calendar, coordinating meetings, " +
-            "client appointments, and administrative priorities while maintaining an efficient and conflict-free schedule"
+            note: "Organized and managed a weekly executive calendar using Google Calendar."
 
         },
 
@@ -229,9 +386,7 @@ const galleries = {
 
             image: "assets/projects/admin/calendar_details.png",
 
-            note: "Created and managed detailed meeting events in Google Calendar, including meeting agendas, attendee " +
-            "invitations, conference room assignments, and Google Meet links. This demonstrates my ability to organize " +
-            "meetings efficiently, communicate with stakeholders, and ensure every session is well-prepared and professionally coordinated." 
+            note: "Created and managed detailed meeting events in Google Calendar."
 
         },
 
@@ -239,20 +394,15 @@ const galleries = {
 
             image: "assets/projects/admin/calendar_schedule.png",
 
-            note: "Managed a structured daily schedule using Google Calendar's Schedule View to organize executive " +
-            "meetings, client appointments, administrative tasks, and follow-up activities. This demonstrates my ability to " +
-            "prioritize responsibilities, manage multiple commitments, and maintain an efficient workflow while ensuring " +
-            "important tasks are completed on time."
+            note: "Managed daily executive schedules and priorities."
 
-        },        
+        },
 
         {
 
             image: "assets/projects/admin/sheets_tracker.png",
 
-            note: "Developed and maintained a client management tracker in Google Sheets to organize customer information, " +
-            "monitor client status, schedule follow-ups, and prioritize ongoing tasks. This system helps ensure accurate " +
-            "record-keeping, timely communication, and efficient management of client relationships throughout the entire workflow"
+            note: "Client Management Tracker."
 
         },
 
@@ -260,13 +410,15 @@ const galleries = {
 
             image: "assets/projects/admin/docs_agenda.png",
 
-            note: "Prepared a professional meeting agenda using Google Docs to support leadership meetings by organizing " +
-            "discussion topics, meeting details, participant information, and key objectives. This demonstrates my ability " +
-            "to create clear, well-structured documents that help meetings stay organized, productive, and focused on business priorities"
+            note: "Meeting Agenda Preparation."
 
-        }        
+        }
 
     ],
+
+    /* =====================================================
+       GRAPHICS
+    ===================================================== */
 
     graphics: [
 
@@ -274,9 +426,7 @@ const galleries = {
 
             image: "assets/projects/graphics/canva_tarp.png",
 
-            note: "The client provided only the product photo and trusted me to handle the entire tarpaulin design. " +
-            "Using Canva, I transformed the image into a professional, eye-catching promotional layout that is " +
-            "optimized for high-quality printing and effective marketing."
+            note: "Tarpaulin Design"
 
         },
 
@@ -284,9 +434,7 @@ const galleries = {
 
             image: "assets/projects/graphics/ps_restoration.png",
 
-            note: "The client provided an old black-and-white photograph for restoration and colorization. Using Adobe " +
-            "Photoshop, I carefully colorized the image, enhanced its overall quality, and restored damaged areas " +
-            "while preserving the subject's original facial features and historical authenticity."
+            note: "Photo Restoration"
 
         },
 
@@ -294,10 +442,7 @@ const galleries = {
 
             image: "assets/projects/graphics/caricatures.png",
 
-            note: "The client provided the original photos, and I used Adobe Photoshop to create personalized " +
-            "caricatures while preserving each person's recognizable facial features and expressions. These custom " +
-            "illustrations were then adapted for various print products, including framed portraits, T-shirts, mugs, " +
-            "and personalized gifts."
+            note: "Caricatures"
 
         },
 
@@ -305,9 +450,7 @@ const galleries = {
 
             image: "assets/projects/graphics/tarp_design.png",
 
-            note: "The clients provided the photos and project details, and I used Canva to create custom " +
-            "tarpaulin designs for various occasions and promotional purposes. Each layout was designed to be " +
-            "visually engaging, well-balanced, and optimized for high-quality printing. "
+            note: "Print Designs"
 
         },
 
@@ -315,13 +458,15 @@ const galleries = {
 
             image: "assets/projects/graphics/others.png",
 
-            note: "The clients provided their photos and design requirements, and I used a combination of Adobe " +
-            "Photoshop and Canva to create custom lanyards, badge cards, and ref magnets. Each design was " +
-            "carefully crafted to be visually appealing, personalized, and optimized for high-quality printing. "
+            note: "Other Graphic Projects"
 
-        },        
-       
+        }
+
     ],
+
+    /* =====================================================
+       PRODUCT RESEARCH
+    ===================================================== */
 
     research: [
 
@@ -329,8 +474,7 @@ const galleries = {
 
             image: "assets/projects/research/deal_sheet.png",
 
-            note: "Created and maintained a Google Sheets tracker to analyze product opportunities, monitor pricing, " +
-            "calculate ROI, and organize supplier information for efficient sourcing and decision-making."
+            note: "Product Research"
 
         },
 
@@ -338,9 +482,7 @@ const galleries = {
 
             image: "assets/projects/research/checkout.png",
 
-            note: "Processed online orders while applying verified discount codes and promotional offers using browser. " +
-            "extensions such as Coupert and similar coupon tools. Reviewed shipping options, validated discounts, and " +
-            "optimized order costs to maximize savings while ensuring accurate checkout information and a smooth purchasing process"
+            note: "Order Processing"
 
         },
 
@@ -348,47 +490,67 @@ const galleries = {
 
             image: "assets/projects/research/us_stores.png",
 
-            note: "Created and maintained a categorized directory of online stores and suppliers using Google Sheets to " +
-            "streamline product research and sourcing. Organized websites by industry and product category, enabling " +
-            "faster access to reliable retailers and improving the efficiency of online research and procurement tasks."
+            note: "Store Directory"
 
         }
 
-    ],
+    ]
 
 };
 
 /* =====================================================
-   Elements
+   PROJECT GALLERY V2
+===================================================== */
+
+/* =====================================================
+   ELEMENTS
 ===================================================== */
 
 const galleryModal = document.getElementById("galleryModal");
-
 const galleryImage = document.getElementById("galleryImage");
-
 const galleryCounter = document.querySelector(".gallery-modal__counter");
-
 const galleryNote = document.getElementById("galleryNote");
 
-const galleryButtons = document.querySelectorAll(".project-card__view");
-
-const closeGallery = document.querySelector(".gallery-modal__close");
-
+galleryBack.addEventListener("click", closeGalleryModal);
 const overlay = document.querySelector(".gallery-modal__overlay");
 
 const previousButton = document.querySelector(".gallery-modal__prev");
-
 const nextButton = document.querySelector(".gallery-modal__next");
+
+const galleryButtons = document.querySelectorAll(".project-card__view");
+
+/* =====================================================
+   SYSTEM SELECTOR
+===================================================== */
+
+const selectorModal = document.getElementById("systemSelector");
+
+const selectorOverlay =
+    document.querySelector(".system-selector__overlay");
+
+const selectorClose =
+    document.querySelector(".system-selector__close");
+
+const systemCards =
+    document.querySelectorAll(".system-card");
+
+/* =====================================================
+   VARIABLES
+===================================================== */
 
 let currentGallery = [];
 
 let currentIndex = 0;
 
+let returnToSystems = false;
+
 /* =====================================================
-   Functions
+   GALLERY FUNCTIONS
 ===================================================== */
 
-function updateGallery(){
+function updateGallery() {
+
+    if (currentGallery.length === 0) return;
 
     const item = currentGallery[currentIndex];
 
@@ -415,11 +577,21 @@ function openGallery(name) {
 
 }
 
-function closeModal() {
+function closeGalleryModal(){
 
     galleryModal.classList.remove("show");
 
-    document.body.style.overflow = "";
+    if(returnToSystems){
+
+        selectorModal.classList.add("show");
+
+        document.body.style.overflow="hidden";
+
+    }else{
+
+        document.body.style.overflow="";
+
+    }
 
 }
 
@@ -452,22 +624,84 @@ function previousImage() {
 }
 
 /* =====================================================
-   Events
+   SYSTEM SELECTOR
 ===================================================== */
+
+function openSystemSelector() {
+
+    selectorModal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+function closeSystemSelector() {
+
+    selectorModal.classList.remove("show");
+
+    document.body.style.overflow = "";
+
+}
+
+/* =====================================================
+   EVENTS
+===================================================== */
+
+// Project Card Click
 
 galleryButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        openGallery(button.dataset.gallery);
+        const gallery = button.dataset.gallery;
+
+        // Enterprise Business Systems
+        if (gallery === "enterprise") {
+
+            openSystemSelector();
+
+            return;
+
+        }
+
+        // Other Galleries
+
+        returnToSystems = false;
+
+        openGallery(gallery);
+    });
+
+});
+
+// System Selection
+
+systemCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const system = card.dataset.system;
+
+        returnToSystems = true;
+
+        closeSystemSelector();
+
+        openGallery(system);
 
     });
 
 });
 
-closeGallery.addEventListener("click", closeModal);
+// Close Selector
 
-overlay.addEventListener("click", closeModal);
+selectorClose.addEventListener("click", closeSystemSelector);
+
+selectorOverlay.addEventListener("click", closeSystemSelector);
+
+// Gallery Controls
+
+galleryBack.addEventListener("click", closeGalleryModal);
+
+overlay.addEventListener("click", closeGalleryModal);
 
 nextButton.addEventListener("click", nextImage);
 
@@ -479,27 +713,37 @@ previousButton.addEventListener("click", previousImage);
 
 document.addEventListener("keydown", (event) => {
 
+    // Escape
+
+    if (event.key === "Escape") {
+
+        if (galleryModal.classList.contains("show")) {
+
+            closeGalleryModal();
+
+        }
+
+        if (selectorModal.classList.contains("show")) {
+
+            closeSystemSelector();
+
+        }
+
+    }
+
+    // Gallery only
+
     if (!galleryModal.classList.contains("show")) return;
 
-    switch (event.key) {
+    if (event.key === "ArrowRight") {
 
-        case "Escape":
+        nextImage();
 
-            closeModal();
+    }
 
-            break;
+    if (event.key === "ArrowLeft") {
 
-        case "ArrowRight":
-
-            nextImage();
-
-            break;
-
-        case "ArrowLeft":
-
-            previousImage();
-
-            break;
+        previousImage();
 
     }
 
